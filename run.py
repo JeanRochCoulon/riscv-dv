@@ -823,7 +823,7 @@ def main():
     # Load configuration from the command line and the configuration file.
     cfg = load_config(args, cwd)
     # Create output directory
-    output_dir = create_output(args.o, args.noclean)
+    output_dir = create_output(args.o, args.noclean, cwd+"/out_")
 
     if args.verilog_style_check:
       logging.debug("Run style check")
