@@ -17,6 +17,11 @@
   cmd: >
     <path_var>/spike --log-commits --isa=<variant> -l <elf>
 
+- iss: verilator
+  path_var: RTL_PATH
+  cmd: >
+    make -C <path_var> sim-verilator elf-bin=<elf>
+
 - iss: ovpsim
   path_var: OVPSIM_PATH
   cmd: >
